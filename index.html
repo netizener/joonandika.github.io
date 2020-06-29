@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <SCRIPT language=JavaScript>
+var message = "function disabled";
+function rtclickcheck(keyp){ if (navigator.appName == "Netscape" && keyp.which == 3){ alert(message); return false; }
+if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(message); return false; } }
+document.onmousedown = rtclickcheck;
+</SCRIPT>
+<script>
+document.onkeydown = function(e) {
+  if(event.keyCode == 123) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+     return false;
+  }
+  if(e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+     return false;
+  }
+}
+</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <title>Nandika Joon</title>
+  <style type="text/css">
+    body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url('two.jpg');
+  min-height: 75%;
+}
+.menu {
+  display: none;
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-webkit-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-moz-keyframes load{
+  from {
+    width: 0%
+  }
+}
+@-o-keyframes load{
+  from {
+    width: 0%
+  }
+}
+}
+.bar{
+  width: 100%;
+  background-color: #ddd;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #696969;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before{
+  background-color: #696969;
+}
+.bar.back::before{
+  background-color: #696969;
+}
+
+.bar.eng::before{
+  width: calc(90% - 10px);
+}
+.bar.py::before{
+  width: calc(60% - 10px);
+}
+.bar.html::before{
+  width: calc(95% - 10px);
+}
+.bar.css::before{
+  width: calc(80% - 10px);
+}
+.bar.js::before{
+  width: calc(70% - 10px);
+}
+@media only screen and (max-width: 600px) {
+  .w3-tag {
+    display: none;
+  }
+  .w3-text-white{
+    display: none;
+  }
+}
+.card{transition: transform .5s;box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.card:hover {
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2); 
+}
+  </style>
+</head>
+<body>
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#skill" class="w3-button w3-block w3-black">SKILLS AND CERTIFICATE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#achievements" class="w3-button w3-block w3-black">WORK AND EXPERIENCE</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">RESUME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
+    </div>
+  </div>
+</div>
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Web developer</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">Nandika<br>Joon</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-tag">Content Writer</span>
+  </div>
+</header>
+<div class="w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about" style="background-color:#e8e8e8">
+  <div class="w3-content" style="max-width:700px;">
+    <h5 class="w3-center w3-padding-64 "><span class="w3-tag w3-wide">ABOUT ME</span></h5>
+    <p>I am a writing and web development enthusiast looking for experiences in these fields that would help me learn and evolve.</p>
+    <p>I have a keen interest in web development—the will of creating beautiful, creative, unique, and convenient websites. I am looking for opportunities to learn and grow in this field. Being restricted to a specific domain has never been my forte. So, I aspire to expand my knowledge of building websites along with various other services to integrate into web development such as AI.</p>
+    <p>Other than this, my love for words, idioms, and writing has been prompting me to learn and improve my skills in this domain too. I have attended various workshops, including a program from the British Council, New Delhi. I strive to evolve and expand my knowledge of writing, as well as my field of writing. I believe learning never ends, and so, I look for opportunities to learn and educate myself about any and everything.</p>
+    <p>I have also been an NCC cadet, so I am trained to be disciplined and punctual. Additionally, I have also been a shooter in the Indian Squad. My experience in sports gives me a competitive sportsmanship spirit as well as a team spirit.
+</p><p>And when I'm not behind my laptop, trying to learn technical stuff, you'll find me behind books attempting to travel through the pages—or actually traveling, exploring the roads less traversed. I love to increase my knowledge of the world and everything around me. </p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>Nothing excites me like unique websites, weird facts and knowledge does!</i></p>
+      <p>Nandika Joon</p>
+    </div>
+  </div>
+</div>
+<div class="w3-container" id="skill" style="background-color:#f0f0f0">
+  <div class="w3-content" style="max-width:700px;">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">MY SKILLS AND CERTIFICATES</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding" style=" background-color: #e8e8e8">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'SKILLS');" id="myLink">
+        <div class="w3-col s6 tablink">SKILLS</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'CERTIFICATES');">
+        <div class="w3-col s6 tablink">CERTIFICATES</div>
+      </a>
+    </div>
+
+    <div id="SKILLS" class="w3-container menu w3-padding-48 w3-card">
+    
+      <h5>HTML</h5>
+      <div class="bar html" data-skill="HTML">85%</div><br>
+      <hr>
+      <h5>CSS</h5>
+      <div class="bar css" data-skill="CSS">80%</div><br>
+    <hr>
+      <h5>C</h5>
+      <div class="bar css" data-skill="HTML">80%</div><br>
+    <hr>
+      <h5>JavaScript</h5>
+      <div class="bar js" data-skill="HTML">70%</div><br>
+<hr>
+      <h5>MySQL</h5>
+      <div class="bar js" data-skill="MySQL">70%</div><br>
+<hr>
+      <h5>Python</h5>
+      <div class="bar py" data-skill="MySQL">60%</div><br>
+<hr>
+      <h5>Spoken English</h5>
+      <div class="bar eng" data-skill="Spoken English">90%</div><br>
+<hr>
+      <h5>Written English</h5>
+      <div class="bar eng" data-skill="Written English">90%</div>
+    </div>
+
+    <div id="CERTIFICATES" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Python for Eveybody</h5>
+      <a target="_blank" href="https://coursera.org/share/cbc0b8f3cf963aefd7bb888600b381cf">
+  <img src="py4e.png" alt="Forest" style="width:150px">
+</a><hr>
+      <h5>Web Application for Everybody</h5>
+      <a target="_blank" href="https://coursera.org/share/71bd1bf7cd28a9bc6b09ec91d02d7f1f">
+  <img src="wa4e.png" alt="Forest" style="width:150px">
+</a><hr>
+    
+      <h5>Dialogflow With Google Cloud</h5>
+      <a target="_blank" href="https://coursera.org/share/a46346dc79d0a51b04101ec6acd15ec7">
+  <img src="google.png" alt="Forest" style="width:150px">
+</a><hr>
+
+<h5>Programming Fundamentals</h5>
+      <a target="_blank" href="https://coursera.org/share/bd410fcc36cffa5eb53c85054d8b974c">
+  <img src="pf.png" alt="Forest" style="width:150px">
+</a><hr>
+    
+      <h5>Young Learner's Course- English</h5><br>
+      <h5>NCC 'C' CERTIFICATE</h5>
+    
+    </div>  
+  </div>
+  <br>
+</div>
+<div class="w3-row-padding w3-padding-64" id="achievements" style="color:#fff; background-color:#333333">
+<h5 class="w3-center" style="padding-top: 30px; padding-bottom: 48px;"><span class="w3-tag w3-wide">WORK AND EXPERIENCE</span></h5>
+<div class="w3-quarter">
+<h2>Some of my Work</h2>
+<p>I have been an avid writer, wed developer, shooter and an NCC cadet. Working in different fields have given me the freedon to explore various disciplines and expand my knowledge. I have learnt some reat lessons from each of these fields. Here are some of my Work and achievents.</p>
+</div>
+
+<div class="w3-quarter">
+<div class="card w3-white">
+  <img src="bes.png" alt="Snow" style="width:100%">
+  <div class="w3-container" style="text-align: center;">
+  <h3>Bullseye Shooting Academy</h3>
+  <h4>Website</h4>
+  <p>Using Wix software, I built a website for Bullseye Shooting Acade,y. This expreience gave me an insight into the web-development software Wix.<br>
+    <a href="www.bullseyeshootingacademy.org">Visit the website.</a></p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="card w3-white">
+  <img src="hwb.png" alt="Lights" style="width:100%">
+  <div class="w3-container" style="text-align: center;">
+  <h3>Heroes With Berets</h3>
+  <h4>Website</h4>
+  <p>Heroes with berets is a website I created as a project for my engineering course. This website is made using Bootstrap, HTML, CSS, PHP, Jquey, Javascript and SQL.<br></p>
+  </div>
+  </div>
+</div>
+
+<div class="w3-quarter">
+<div class="card w3-light-grey">
+  <div class="w3-container">
+  <h3>Miscellaneous</h3>
+  <ol>
+    <li>I have worked as an intern in Ideogram Technology Solutions Pvt. Ltd.</li>
+    <li>I have worked as an intern in Global Arcus.</li>
+    <li>I ateented the Young Learner's Course- English by British Council, New Delhi.</li>
+    <li>I am a holder of NCC 'C' certificate.</li> 
+  </ol>
+  </div>
+  </div>
+</div></div>
+<div class="w3-container" id="Resume">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">My Resume</span></h5>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p style="text-align: center;"><i>Click here to download my <a href="resume.docx" download="resume.docx">Resume</a></i></p>
+    </div>
+  </div>
+</div>
+<br>
+</div>
+<footer class="w3-center w3-black w3-large" style="padding-top: 42px; padding-bottom: 30px;">
+  <div class="w3-container" id="where" style="padding-bottom:26px; padding-top: 32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center"><span class="w3-tag w3-wide">CONTACT ME</span>
+    <p>Coffee? Work? Tea? Feel free to contact me.</p><br>
+    <h5>
+    <a href = "mailto: joonandika@gmail.com">
+      <img src="gmail.jpg" style="width: 50px; border-radius: 50%; border-color: black;"></a>Email me at <a href = "mailto: joonandika@gmail.com">joonandika@gmail.com</a></h5>
+    <h5><a target="_blank" href="https://instagram.com/faujibrat">
+      <img src="instagram.jpg" style="width: 50px; border-radius: 50%;border-color: black;"></a>Or DM me <a target="_blank" href="https://instagram.com/faujibrat">@faujibrat</a></h5>
+      <h5>
+      <a target="_blank" href="https://www.linkedin.com/in/nandika-joon-824a071a2/">
+      <img src="linkdin.jpg" style="width: 50px; border-radius: 50%;border-color: black;"></a>Or let's connect through <a target="_blank" href="https://www.linkedin.com/in/nandika-joon-824a071a2/">LinkdIn</a></h5>
+      <h5>
+      <a href="tel:+917976463009"><img src="call.jpg" style="width: 50px; border-radius: 50%;border-color: black;"></a>Or you could just Call me at <a href="tel:+917976463009">+917976463009</a></h5>
+  </div>
+</div>
+</footer>
+<script>
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
